@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.2 on win32)" generated="20200828 20:44:27.252" rpa="false">
+<suite id="s1" name="Download Csv" source="E:\Rahul\Testing Docs\Python\Robot_Framework\Test_Cases\download_csv.robot">
+<test id="s1-t1" name="Download_CSV">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://finance.yahoo.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200828 20:44:27.525" level="INFO">Opening browser 'chrome' to base url 'https://finance.yahoo.com/'.</msg>
+<status status="PASS" starttime="20200828 20:44:27.525" endtime="20200828 20:44:37.509"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200828 20:44:37.510" endtime="20200828 20:44:43.639"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20200828 20:44:43.639" endtime="20200828 20:44:43.642"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:yfin-usr-qry</arg>
+<arg>Fortive corporation</arg>
+</arguments>
+<msg timestamp="20200828 20:44:43.643" level="INFO">Typing text 'Fortive corporation' into text field 'id:yfin-usr-qry'.</msg>
+<status status="PASS" starttime="20200828 20:44:43.642" endtime="20200828 20:44:43.933"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://button[@id='header-desktop-search-button']</arg>
+</arguments>
+<msg timestamp="20200828 20:44:43.934" level="INFO">Clicking element 'xpath://button[@id='header-desktop-search-button']'.</msg>
+<status status="PASS" starttime="20200828 20:44:43.933" endtime="20200828 20:44:44.058"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://span[text()='Historical Data']</arg>
+</arguments>
+<msg timestamp="20200828 20:44:44.059" level="INFO">Clicking element 'xpath://span[text()='Historical Data']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200828 20:44:51.812" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.135)
+</msg>
+<status status="FAIL" starttime="20200828 20:44:51.638" endtime="20200828 20:44:51.812"></status>
+</kw>
+<msg timestamp="20200828 20:44:51.812" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.135)
+</msg>
+<msg timestamp="20200828 20:44:51.944" level="FAIL">Element with locator 'xpath://span[text()='Historical Data']' not found.</msg>
+<status status="FAIL" starttime="20200828 20:44:44.059" endtime="20200828 20:44:51.945"></status>
+</kw>
+<status status="FAIL" starttime="20200828 20:44:27.524" endtime="20200828 20:44:51.945" critical="yes">Element with locator 'xpath://span[text()='Historical Data']' not found.</status>
+</test>
+<status status="FAIL" starttime="20200828 20:44:27.255" endtime="20200828 20:44:51.948"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Download Csv">Download Csv</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200828 20:44:51.812" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.135)
+</msg>
+</errors>
+</robot>
