@@ -22,9 +22,9 @@ Download_CSV
         open browser       https://accounts.google.com/signin  chrome
         maximize browser window
         set selenium implicit wait  20 seconds
-        input text      name:identifier     rahul.pawar.asentech@gmail.com
+        input text      name:identifier     user@gmail.com
         click element   xpath://div[@class='VfPpkd-RLmnJb']
-        input text      name:password Abcd$123
+        input text      name:password  abcpassword
         click element   xpath://span[@class='VfPpkd-vQzf8d' and contains(text(),'Next')]
 
 
