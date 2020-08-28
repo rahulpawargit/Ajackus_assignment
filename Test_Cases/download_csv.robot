@@ -8,7 +8,7 @@ Library  SeleniumLibrary
 Download_CSV
 
 
-        open_browser    https://finance.yahoo.com/   chrome
+        open_browser    https://finance.yahoo.com/  chrome
         maximize browser window
         set selenium implicit wait  20 seconds
         input text     id:yfin-usr-qry     Fortive corporation
