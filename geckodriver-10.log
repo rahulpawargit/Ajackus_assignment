@@ -1,0 +1,10 @@
+1605719641386	geckodriver	INFO	Listening on 127.0.0.1:58443
+1605719644497	mozrunner::runner	INFO	Running command: "C:\\Users\\rahul.pawar\\AppData\\Local\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\RAHUL~1.PAW\\AppData\\Local\\Temp\\rust_mozprofileNupkWT"
+1605719645232	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1605719645263	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1605719645263	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1605719645269	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1605719645269	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1605719648959	Marionette	INFO	Listening on port 58452
+1605719649415	Marionette	WARN	TLS certificate errors will be ignored for this session
